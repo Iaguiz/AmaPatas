@@ -12,3 +12,5 @@ Integrantes do projeto:
 - Emanuel
 - Gláucia Santos
 - Manu Gomes
+
+Iago-> Precisamos complementar o nome completo de todos e colocar algo sobre o site aqui
