@@ -1,0 +1,50 @@
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background: hsl(0, 61%, 57%);
+    box-shadow: 0px 3px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+.menu li #botãoMenu{
+    display: block;
+    padding: 10px;
+    background: hsl(2, 63%, 66%);
+    border-bottom: 5px solid hsl(2, 63%, 33%);
+    border-radius: 10px;
+}
+.menu li #botãoAdoção{
+    display: block;
+    padding: 10px;
+    background: orange;
+    border-bottom: 5px solid hsl(39, 100%, 33%);
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.linInicial{
+    border: 1px dotted;
+    background-color: rgba(255, 0, 0, 0.726);
+    width: 250px;
+    height: 50px;
+}
