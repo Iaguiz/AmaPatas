@@ -1,3 +1,4 @@
+/*Iago ->  Modificações do corpo inteiro do site*/
 body, ul, li, p{
     margin: 0px;
     padding: 0px;
@@ -6,6 +7,7 @@ body, ul, li, p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Iago -> Estrutura inteira do cabeçalho*/
 .header{
     background: hsl(0, 61%, 57%);
     box-shadow: 0px 3px 20px;
@@ -16,13 +18,17 @@ body, ul, li, p{
     padding: 20px;
 }
 
+/*Iago -> Modificações da lista que está em <nav>*/
 .menu{
     display: flex;
 }
 
+/*Iago -> Modifica os itens da lista que está em <nav>*/
 .menu li{
     margin-left: 10px;
 }
+
+/*Iago -> Muda todos os botões com id="botãoMenu"*/
 .menu li #botãoMenu{
     display: block;
     padding: 10px;
@@ -30,6 +36,8 @@ body, ul, li, p{
     border-bottom: 5px solid hsl(2, 63%, 33%);
     border-radius: 10px;
 }
+
+/*Iago -> Muda o botão com id="botãoAdoção"*/
 .menu li #botãoAdoção{
     display: block;
     padding: 10px;
@@ -38,13 +46,68 @@ body, ul, li, p{
     border-radius: 10px;
 }
 
+/*Iago -> Retira a decoração de link (O sublinhado embaixo)*/
 a{
     text-decoration: none;
 }
 
-.linInicial{
-    border: 1px dotted;
-    background-color: rgba(255, 0, 0, 0.726);
-    width: 250px;
-    height: 50px;
+.slider{
+    margin: 0 auto;
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+	border-radius: 40px;
+}
+.slides{
+	width: 400%;
+	height: 400px;
+	display: flex;
+}
+.slides input{
+	display: none;
+}
+.slide{
+	width: 25%;
+	position: relative;
+}
+.slide img{
+	width: 800px;
+}
+
+.navegacao-manual{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.botao-manual{
+	border: 3px solid red;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.botao-manual:not(:last-child){
+	margin-right: 40px;
+}
+.botao-manual:hover{
+	background-color: red;
+}
+#radio1:checked ~ .first{
+	margin-left: 0;
+	transition: 3s;
+}
+#radio2:checked ~ .first{
+	margin-left: -25%;
+	transition: 3s;
+}
+#radio3:checked ~ .first{
+	margin-left: -50%;
+	transition: 3s;
+}
+#radio4:checked ~ .first{
+	margin-left: -75%;
+	transition: 3s;
 }

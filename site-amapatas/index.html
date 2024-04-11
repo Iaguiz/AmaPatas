@@ -10,33 +10,82 @@
         
         
         <link rel="stylesheet" href="Assets/style.css">
-        <link rel="icon" type="image/png" href="">
+        <link rel="icon" type="image/png" href="Assets/imagens/logo.png">
         
     </head>
     <body>
         <header class="header">
-            <a href="">Ama Patas</a> <!--Logo da página-->
+            <!--Logo da página-->
+        <a href="">
+            <img src="Assets/imagens/logo.png" width="100px">
+        </a> 
+
 
         <nav class="navbar"> <!--Menu de navegação-->
             <ul class="menu">
-                <li><a href="" id="botãoMenu" target="Sobre" style="color: hsl(0, 0%, 90%);">Sobre</a></li>
-                <li><a href="" id="botãoMenu" target="Contato" style="color: hsl(0, 0%, 90%);">Contato</a></li>
+                <li><a href="aa" id="botãoMenu" target="Sobre" style="color: hsl(0, 0%, 90%);">Sobre</a></li>
+                <li><a href="asa" id="botãoMenu" target="Contato" style="color: hsl(0, 0%, 90%);">Contato</a></li>
                 <li><a href="https://www.facebook.com/amapatas/?locale=pt_BR" id="botãoMenu" target="_blank" title="Facebook" style="color: hsl(0, 0%, 90%);">Facebook</a></li>
                 <li><a href="https://www.instagram.com/amapatas/" id="botãoMenu" target="_blank" title="Instagram" style="color: hsl(0, 0%, 90%);">Instagram</a></li>
-                <li><a href="" id="botãoAdoção">Quero adotar</li>
+                <li><a href="a" id="botãoAdoção">Quero adotar</a></li>
             </ul>
         </nav>
         </header>
+
+        <br>
+
         <main>
+            <div class="slider">
+                <div class="slides">
+                    <!--Botões do slides-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!--Imagens dos slides-->
+                    <div class="slide first">
+                        <img src="Assets/imagens/pastor_alemão.png" alt="Foto de um pastor alemão">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets/imagens/gato.png" alt="Foto de um gato">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets/imagens/cachorro_esquisito.jpg" alt="Foto de um cachorro esquisito">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets/imagens/gato2.jpg" alt="Foto de um gato perto da câmera">
+                    </div>
+                    <!--Fim das imagens dos slides-->
+
+                    <!--Navegação automática-->
+                    
+                    <div class="navegacao-automatica">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <div class="navegacao-manual">
+                    <label for="radio1" class="botao-manual"></label>
+                    <label for="radio2" class="botao-manual"></label>
+                    <label for="radio3" class="botao-manual"></label>
+                    <label for="radio4" class="botao-manual"></label>
+                </div>
+
+            </div>
 
         </main>
+
         <article>
             
         </article>
         <footer>    
 
         </footer>
-
+        <script src="script.js"></script>
         <!--Scripts do framework Bootstrap, deixei comentado pois não sei se iremos utilizar-->
     <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>-->
