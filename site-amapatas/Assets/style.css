@@ -143,6 +143,47 @@ a{
 }
 /*Fim do slider*/
 
+/*Titulo "Encontre seu melhor amigo!"*/
+.tituloPrincipal{
+	
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.tituloPrincipal #melhorAmigo{
+	margin: 30px;
+}
+.tituloPrincipal #melhorAmigo span{
+	color: hsl(0, 100%, 61%);
+}
+.tituloPrincipal #pata1{
+	width: 40px;
+	transform: rotate(30deg);
+	transition: 0.5s;
+}
+.tituloPrincipal #pata1:hover{
+	transform: rotate(-30deg);
+	transition: 0.5s;
+}
+.tituloPrincipal #pata2{
+	width: 40px;
+	transform: rotate(-30deg);
+	transition: 0.5s;
+}
+.tituloPrincipal #pata2:hover{
+	transform: rotate(30deg);
+	transition: 0.5s;
+}
+/*Fim do titulo "Encontre seu melhor amigo!"*/
+
+
+
+
+
+
+/*
 .lateral{
 	
 }
@@ -160,3 +201,4 @@ transition: 0.5s;
 .lateral div:not(:last-child){
 	margin-bottom: 80px;
 }
+*/
