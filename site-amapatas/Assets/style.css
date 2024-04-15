@@ -9,7 +9,7 @@ body, ul, li, p{
 
 /*Iago -> Estrutura inteira do cabeçalho*/
 .header{
-    background: hsl(0, 61%, 57%);
+    background: hsl(0, 49%, 87%);
     box-shadow: 0px 3px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +50,7 @@ body, ul, li, p{
 a{
     text-decoration: none;
 }
-
+/*Início do slider*/
 .slider{
     margin: 0 auto;
 	width: 800px;
@@ -69,7 +69,7 @@ a{
 .slide{
 	width: 25%;
 	position: relative;
-	transition: 2s;
+	transition: 1.5s;
 }
 .slide img{
 	width: 800px;
@@ -84,7 +84,7 @@ a{
 }
 
 .botao-manual{
-	border: 3px solid red;
+	border: 3px solid white;
 	padding: 5px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -94,7 +94,7 @@ a{
 	margin-right: 40px;
 }
 .botao-manual:hover{
-	background-color: red;
+	background-color: gray;
 }
 #radio1:checked ~ .first{
 	margin-left: 0;
@@ -113,7 +113,7 @@ a{
 	
 }
 .navigation-auto div{
-	border: 3px solid red;
+	border: 3px solid white;
 	padding: 5px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -130,14 +130,33 @@ a{
 	margin-right: 40px;
 }
 #radio1:checked ~ .navigation-auto .auto-btn1{
-	background-color: red;
+	background-color: white;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-	background-color: red;
+	background-color: white;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-	background-color: red;
+	background-color: white;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-	background-color: red;
+	background-color: white;
+}
+/*Fim do slider*/
+
+.lateral{
+	
+}
+.lateral img{
+	width: 20px;
+	transform: rotate(30deg);
+	transition: 0.5s;
+}
+	
+.lateral img:hover {
+	
+transform: rotate(-30deg);
+transition: 0.5s;
+}
+.lateral div:not(:last-child){
+	margin-bottom: 80px;
 }
