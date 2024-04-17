@@ -1,7 +1,9 @@
 html{
 	height: 500vh;
 }
-
+body{
+	background-color: hsl(325, 61%, 90%);
+}
 
 /*Iago ->  Modificações de todo o site*/
 *{
@@ -146,6 +148,7 @@ a{
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
 	background-color: white;
+	
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
 	background-color: white;
@@ -164,9 +167,11 @@ a{
 }
 .tituloPrincipal #melhorAmigo{
 	margin: 40px;
+	font-family: "Lobster Two", "lobster";
 }
 .tituloPrincipal #melhorAmigo span{
 	color: hsl(0, 100%, 61%);
+	font-family: "lobster";
 }
 .tituloPrincipal #pata1{
 	width: 40px;
@@ -187,7 +192,6 @@ a{
 	transition: 0.5s;
 }
 /*Fim do titulo "Encontre seu melhor amigo!"*/
-
 
 
 
