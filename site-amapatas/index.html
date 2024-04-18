@@ -11,15 +11,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="Assets/style.css">
-        <link rel="icon" type="image/png" href="Assets/imagens/logo.png">
+        <link rel="stylesheet" href="styles/text.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/slider.css">
+        <link rel="icon" type="image/png" href="imagens/logo.png">
         
     </head>
     <body>
         <header class="header">
             <!--Logo da página-->
         <a href="index.html">
-            <img src="Assets/imagens/logo.png" width="100px">
+            <img src="imagens/logo.png" width="100px">
         </a> 
 
 
@@ -48,16 +51,16 @@
 
                     <!--Imagens dos slides-->
                     <div class="slide first">
-                        <img src="Assets/imagens/pastor_alemão.png" alt="Foto de um pastor alemão">
+                        <img src="imagens/pastor_alemão.png" alt="Foto de um pastor alemão">
                     </div>
                     <div class="slide">
-                        <img src="Assets/imagens/gato.png" alt="Foto de um gato">
+                        <img src="imagens/gato.png" alt="Foto de um gato">
                     </div>
                     <div class="slide">
-                        <img src="Assets/imagens/cachorro_esquisito.jpg" alt="Foto de um cachorro esquisito">
+                        <img src="imagens/cachorro_esquisito.jpg" alt="Foto de um cachorro esquisito">
                     </div>
                     <div class="slide">
-                        <img src="Assets/imagens/gato2.jpg" alt="Foto de um gato perto da câmera">
+                        <img src="imagens/gato2.jpg" alt="Foto de um gato perto da câmera">
                     </div>
                     <!--Fim das imagens dos slides-->
 
@@ -79,21 +82,38 @@
             <div class="explicandoAdocao">
 
                 <div class="tituloPrincipal">
-                    <img id="pata1" src="Assets/imagens/pata.png">
+                    <img id="pata1" src="imagens/pata.png">
                     <h1 id="melhorAmigo">ENCONTRE SEU <span>MELHOR AMIGO!</span></h1>
-                    <img id="pata2" src="Assets/imagens/pata.png">
+                    <img id="pata2" src="imagens/pata.png">
                 </div>
 
                 <div class="textoExplicativo">
+
                     <div class="curiosidades">
-                        <div class="tituloCuriosidades"><h2>Quando e porque iniciamos?</h2></div>
+                        <div class="tituloCuriosidades"><h2>Sobre nós</h2></div>
                         <div class="textoCuriosidades">
-                            <p>Iniciamos a ONG Ama Patas em 2001</p>
+                            <p>Fundada em Atibaia no ano de 2001, a ONG Ama Patas é um dos maiores grupos de resgate e adoção de cães e gatos da região Bragantina.</p>
                         </div>
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+
+                    <div class="curiosidades">
+                        <div class="tituloCuriosidades"><h2>Animais resgatados</h2></div>
+                        <div class="textoCuriosidades">
+                            <p>Já resgatamos e doamos ao longo dos anos mais de 5 mil animais e atualmente estamos com <span></span> deles esperando uma família 🥰</p>
+                        </div>
+                                                <!--Utilizar o span acima para comunicar com o banco de dados e pegar o número atual de animais cadastrados-->
+                    </div>
+
+                    <div class="curiosidades">
+                        <div class="tituloCuriosidades"></div>
+                        <div class="textoCuriosidades"></div>
+                    </div>
+                    
+                    <div class="curiosidades">
+                        <div class="tituloCuriosidades"></div>
+                        <div class="textoCuriosidades"></div>
+                    </div>
+
                 </div>
             </div>
             <aside class="lateral">
@@ -105,7 +125,8 @@
         <footer>    
 
         </footer>
-        <script src="script.js"></script>
+        <script src="scripts/slider.js"></script>
+        <script src="scripts/navbar.js"></script>
         <!--Scripts do framework Bootstrap, deixei comentado pois não sei se iremos utilizar-->
     <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>-->
