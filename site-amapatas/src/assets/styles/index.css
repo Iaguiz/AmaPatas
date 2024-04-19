@@ -196,5 +196,16 @@ a{
 	transform: rotate(30deg);
 	transition: 0.5s;
 }
+.textoExplicativo{
+	
+    display:grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 
+}
+.textoExplicativo tituloCuriosidades{
+	display: flex;
+}
 /*FINAL DO TEXTO E TITULO CENTRAL DO SITE*/
