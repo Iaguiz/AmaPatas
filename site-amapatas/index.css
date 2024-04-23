@@ -1,8 +1,8 @@
 html{
-	height: 500vh;
+	height: 2000px;
 }
 body{
-	background-color: hsl(325, 61%, 90%);
+	background-color: hsl(0, 0%, 100%);
 }
 
 /*Iago ->  Modificações de todo o site*/
@@ -16,7 +16,9 @@ body{
 
 /*Iago -> Estrutura inteira do cabeçalho*/
 .header{
-	
+	position: sticky;
+	top: 0px;
+	z-index: 2;
     background: hsl(0, 49%, 87%);
     box-shadow: 0px 3px 20px;
     display: flex;
@@ -55,7 +57,11 @@ body{
     background: orange;
     border-bottom: 5px solid hsl(39, 100%, 33%);
     border-radius: 10px;
+	color: hsla(249, 100%, 50%, 0.678);
+	
 }
+
+	
 
 /*Iago -> Retira a decoração de link (O sublinhado embaixo)*/
 a{
@@ -65,7 +71,7 @@ a{
 
 /*INICIO DO SLIDER*/
 .slider{
-    margin: 0 auto;
+    margin: auto;
 	width: 1200px;
 	height: 650px;
 	overflow: hidden;
@@ -168,7 +174,7 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    margin: 40px;
 }
 .tituloPrincipal #melhorAmigo{
 	margin: 40px;
@@ -197,15 +203,107 @@ a{
 	transition: 0.5s;
 }
 .textoExplicativo{
-	
-    display:grid;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-
-}
-.textoExplicativo tituloCuriosidades{
 	display: flex;
+	flex-wrap: wrap;
+	width: 1120px;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	border: 15px dotted hsl(347, 65%, 65%);
+	border-radius: 70px;
+}
+
+.curiosidades{	
+    display: flexbox;
+    justify-content: center;
+	height: 258px;
+	width: 200px;
+    margin: 40px;
+	
+}
+.tituloCuriosidades{
+	height: 100px;
+	width: 200px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	margin-bottom: 8px;
+}
+.textoCuriosidades{
+	display: flex;
+	height: 150px;
+	width: 200px;
+	text-align: center;
+	justify-content: center;
+	
+}
+.curiosidades #listaDoacoes{
+	text-align: start;
 }
 /*FINAL DO TEXTO E TITULO CENTRAL DO SITE*/
+
+/*INICIO DAS CARTAS*/
+.card-area{
+	margin-top: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.card-group{
+	border: 3px solid;
+}
+.card-group,
+.card{
+	aspect-ratio: 5/7;
+}
+.card-group,
+.big-card{
+	width: 235px;
+	
+}
+.card{
+	border-radius: 20px;
+	position: absolute;
+	background-color: rgba(250, 131, 131, 0.226);
+}
+.big-card{
+	width: 235px;
+	height: 280px;
+}
+.little-card{
+	width: 116px;
+	height: 140px;
+}
+.texto-cartas{
+	font-size: 25px;
+	border: 3px solid;
+}
+
+.big-card:nth-child(1) {
+	background-image: url(./src/assets/imagens/cao_amelia.png);
+	transform: translateX(-10%) rotate(-5deg);
+}
+
+
+.big-card:nth-child(2) {
+	background-image: url(./src/assets/imagens/gato_torto.png);
+	transform: translateX(-5%) rotate(-2deg);
+}
+  
+.big-card:nth-child(3) {
+	background-image: url(./src/assets/imagens/cao_coragem.png);
+	transform: translateX(6%) rotate(-3deg);
+}
+  
+.big-card:nth-child(4) {
+	background-image: url(./src/assets/imagens/cao_decorado.png);
+	transform: translate(10%, 3%) rotate(5deg);
+}
+
+/* FINAL DAS CARTAS */
+
+/*INICIO DO FOOTER*/
+.fundoFooter{
+	background-color: hsl(0, 49%, 87%);
+	
+}
