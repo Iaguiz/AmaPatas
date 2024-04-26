@@ -1,0 +1,494 @@
+html{
+	height: 2500px;
+}
+body{
+	background-image: url(./imagens/imagem_de_fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed;
+}
+main{
+	z-index: 0;
+	background-color: hsla(0, 0%, 100%, 0.664);
+}
+/*Iago ->  Modificações de todo o site*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*INICIO DO HEADER*/
+
+/*Iago -> Estrutura inteira do cabeçalho*/
+.header{
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+    background: hsl(0, 49%, 87%);
+    box-shadow: 0px 3px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+	
+}
+
+/*Iago -> Modificações da lista que está em <nav>*/
+.menu{
+    display: flex;
+	list-style: none;
+}
+
+/*Iago -> Modifica os itens da lista que está em <nav>*/
+.menu li{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/*Iago -> Muda todos os botões com id="botãoMenu"*/
+.menu li #botãoMenu{
+    display: block;
+    padding: 10px;
+    background: hsl(2, 63%, 66%);
+    border-bottom: 5px solid hsl(2, 63%, 33%);
+    border-radius: 10px;
+	color: hsl(0, 0%, 90%);
+}
+
+/*Iago -> Muda o botão com id="botãoAdoção"*/
+.menu li #botãoAdoção{
+    display: block;
+    padding: 10px;
+    background: orange;
+    border-bottom: 5px solid hsl(39, 100%, 33%);
+    border-radius: 10px;
+	color: hsla(249, 100%, 50%, 0.678);
+	
+}
+
+	
+
+/*Iago -> Retira a decoração de link (O sublinhado embaixo)*/
+a{
+    text-decoration: none;
+}
+/*FINAL DO HEADER*/
+
+/*INICIO DO SLIDER*/
+.slider{
+    margin: auto;
+	width: 100%;
+	height: 720px;
+	overflow: hidden;
+}
+.slides{
+	width: 400%;
+	height: 400px;
+	display: flex;
+}
+.slides input{
+	display: none;
+}
+.slide{
+	width: 25%;
+	position: relative;
+	transition: 1.5s;
+}
+.slide img{
+	position: relative;
+	z-index: 1;
+	top: -30%;
+	width: 100%;
+	height: 960px;
+}
+
+.slide span{
+	z-index: 2;
+	width: 700px;
+  	font-size: 30px;
+  	font-weight: 900;
+  	line-height: 36px;
+  	letter-spacing: 0px;
+  	text-align: center;
+  	position: relative;
+  	font-family: "Mulish", sans-serif;
+	display: flex;
+	
+}
+.slide #sliderTexto1{
+	color: rgb(0, 129, 204);
+	top: -190%;
+	left: 2%;
+}
+.slide #sliderTexto2{
+	color: rgb(251, 251, 249);
+	top: -235%;
+	left: 40%;
+}
+.slide #sliderTexto3{
+	color: rgb(130, 37, 173);
+	top: -235%;
+	left: 40%;
+}
+.slide #sliderTexto4{
+	color: rgb(211, 168, 76);
+	top: -235%;
+	left: 40%;
+}
+.navegacao-manual{
+	position: absolute;
+	width: 100%;
+	margin-top: 740px;
+	display: flex;
+	justify-content: center;
+}
+
+.botao-manual{
+	border: 3px solid rgb(0, 0, 0);
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.botao-manual:not(:last-child){
+	margin-right: 40px;
+}
+.botao-manual:hover{
+	background-color: gray;
+}
+#radio1:checked ~ .first{
+	margin-left: 0;
+	
+}
+#radio2:checked ~ .first{
+	margin-left: -25%;
+	
+}
+#radio3:checked ~ .first{
+	margin-left: -50%;
+	
+}
+#radio4:checked ~ .first{
+	margin-left: -75%;
+	
+}
+.navigation-auto div{
+	border: 3px solid rgb(0, 0, 0);
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.navigation-auto{
+	position: absolute;
+	width: 100%;
+	margin-top: 740px;
+	display: flex;
+	justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+	margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background-color: rgb(0, 0, 0);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background-color: rgb(0, 0, 0);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background-color: rgb(0, 0, 0);
+	
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background-color: rgb(0, 0, 0);
+}
+
+/*FIM DO SLIDER*/
+
+/*INICIO DO TEXTO E TITULO CENTRAL DO SITE"*/
+
+.tituloPrincipal{
+	
+    font-size: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.tituloPrincipal #melhorAmigo{
+	margin: 40px;
+	font-family: "Lobster Two", "lobster";
+}
+.tituloPrincipal #melhorAmigo span{
+	color: hsl(0, 100%, 61%);
+	font-family: "Lobster Two","lobster";
+}
+.tituloPrincipal #pata1{
+	width: 40px;
+	transform: rotate(30deg);
+	transition: 0.5s;
+}
+.tituloPrincipal #pata1:hover{
+	transform: rotate(-30deg);
+	transition: 0.5s;
+}
+.tituloPrincipal #pata2{
+	width: 40px;
+	transform: rotate(-30deg);
+	transition: 0.5s;
+}
+.tituloPrincipal #pata2:hover{
+	transform: rotate(30deg);
+	transition: 0.5s;
+}
+.textoExplicativo{
+	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.curiosidades{	
+    display: flexbox;
+    justify-content: center;
+	height: 300px;
+	width: 200px;
+	padding: 30px;
+    margin: 40px;
+	background-color: rgb(255, 202, 202);
+	border: 5px dotted rgb(255, 109, 133);
+	border-radius: 50px;
+}
+.tituloCuriosidades{
+	height: 90px;
+	width: 200px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+.textoCuriosidades{
+	display: flex;
+	height: 150px;
+	width: 200px;
+	text-align: center;
+	justify-content: center;
+	
+}
+.curiosidades #listaDoacoes{
+	text-align: start;
+}
+/*FINAL DO TEXTO E TITULO CENTRAL DO SITE*/
+
+/*INICIO DAS CARTAS*/
+.card-area{
+	padding-top: 30px;
+	
+	border: 3px dashed rgb(255, 132, 153);
+}
+
+.card-area a{
+	color: black;
+	width: 300px;
+	
+}
+
+.card-group{
+	margin: auto;
+	height: 100%;
+	padding-bottom: 200px;
+}
+
+.texto-cartas{
+	margin-bottom: 100px;
+	font-size: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.texto-cartas img{
+	width: 80px;
+}
+.texto-cartas h1{
+	font-family: "Lobster Two","lobster";
+    margin: 40px;
+}
+.card-group,
+.card{
+	aspect-ratio: 5/7;
+}
+.card-group,
+.big-card{
+	width: 235px;
+	
+}
+.card{
+	z-index: 1;
+	border: 1px solid;
+	border-radius: 20px;
+	position: absolute;
+	background-color: rgba(250, 131, 131, 0.226);
+	transition: transform 1000ms cubic-bezier(.05,.43,.25,.95);
+	cursor: pointer;
+}
+.big-card{
+	width: 235px;
+	height: 280px;
+}
+.little-card{
+	width: 116px;
+	height: 140px;
+}
+
+/*POSIÇÃO INICIAL DAS CARTAS*/
+
+.big-card:nth-child(2) {
+	background-image: url(./imagens/cao_marley.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translate(0%) rotate(-10deg);
+}
+.big-card:nth-child(4) {
+	background-image: url(./imagens/cao_coragem.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translate(0%, 5%) rotate(6deg);
+}
+.big-card:nth-child(6) {
+	background-image: url(./imagens/gato_torto.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translate(0%, 10%) rotate(-3deg);
+}
+.big-card:nth-child(8) {
+	background-image: url(./imagens/cao_decorado.png); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translate(0%, 15%) rotate(15deg);
+}
+
+.little-card:nth-child(1){
+	background-image: url(./imagens/cao_caraPintada.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translate(60%, -10%) rotate(3deg);
+}
+.little-card:nth-child(3){
+	background-image: url(./imagens/cao_boris.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translate(120%, 75%) rotate(15deg);
+}
+.little-card:nth-child(5){
+	background-image: url(./imagens/gato_gordinho.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translate(35%, 140%) rotate(0deg);
+}
+.little-card:nth-child(7){
+	background-image: url(./imagens/gato_distraido.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translate(-20%, 100%) rotate(-7deg);
+}
+/*POSIÇÃO INICIAL DAS CARTAS*/
+/*POSIÇÃO FINAL DAS CARTAS*/
+.card-area:hover >a> .card-group > .card {  
+	box-shadow: -2vmin 2vmin 3vmin rgba(0, 0, 0, 0.4);
+}
+.card-area:hover >a> .card-group > .big-card:nth-child(2) {
+	transform: translate(-75%, 16%) rotate(-24deg);
+}
+.card-area:hover >a> .card-group > .big-card:nth-child(4) {
+	transform: translate(-25%, 8%) rotate(-8deg);
+}
+.card-area:hover >a> .card-group > .big-card:nth-child(6) {
+	transform: translate(25%, 8%) rotate(8deg);
+}
+.card-area:hover >a> .card-group > .big-card:nth-child(8) {
+	transform: translate(75%, 16%) rotate(24deg);
+}
+
+
+.card-area:hover >a> .card-group > .little-card:nth-child(1) {
+	transform: translate(350%, -50%) rotate(18deg);
+}
+.card-area:hover >a> .card-group > .little-card:nth-child(3) {
+	transform: translate(-270%, -40%) rotate(-20deg);
+}
+.card-area:hover >a> .card-group > .little-card:nth-child(5) {
+	transform: translate(400%, 200%) rotate(15deg);
+}
+.card-area:hover >a> .card-group > .little-card:nth-child(7) {
+	transform: translate(-280%, 200%) rotate(-15deg);
+}
+
+.emojis{
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
+.emojis li{
+	position: absolute;
+	z-index: 0;
+	width: 50px;
+	list-style: none;
+	font-size: 35px;
+	text-align: center;
+	transition: transform 1000ms cubic-bezier(.05,.43,.25,.95);
+	
+}
+
+
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(1){
+	transform: translate(-900%, 50%);
+}
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(2){
+	transform: translate(300%, -500%);
+}
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(3){
+	transform: translate(800%, -100%);
+}
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(4){
+	transform: translate(-1100%, 300%);
+}
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(5){
+	transform: translate(-190%, 400%);
+}
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(6){
+	transform: translate(-500%, -400%);
+}
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(7){
+	transform: translate(90%, 370%);
+}
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(8){
+	transform: translate(590%, 200%);
+}
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(9){
+	transform: translate(950%, 450%);
+}
+.card-area:hover >a> .card-group > .emojis > ul > li:nth-child(10){
+	transform: translate(-90%, -440%);
+}
+/*POSIÇÃO FINAL DAS CARTAS*/
+
+/* FINAL DAS CARTAS */
+
+/*INICIO DO FOOTER*/
+.fundoFooter{
+	background-color: hsl(0, 49%, 87%);
+	
+}

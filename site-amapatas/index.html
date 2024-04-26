@@ -11,12 +11,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="src/assets/index.css">
 
         <link rel="icon" type="image/png" href="src/assets/imagens/logo.png">
         
     </head>
     <body>
+        
         <header class="header">
             <!--Logo da página-->
         <a href="index.html">
@@ -26,16 +27,16 @@
 
         <nav class="navbar"> <!--Menu de navegação-->
             <ul class="menu">
-                <li><a href="aa" id="botãoMenu" target="_blank" style="color: hsl(0, 0%, 90%);">Sobre</a></li>
-                <li><a href="asa" id="botãoMenu" target="_blank" style="color: hsl(0, 0%, 90%);">Contato</a></li>
-                <li><a href="https://www.facebook.com/amapatas/?locale=pt_BR" id="botãoMenu" target="_blank" title="Facebook" style="color: hsl(0, 0%, 90%);">Facebook</a></li>
-                <li><a href="https://www.instagram.com/amapatas/" id="botãoMenu" target="_blank" title="Instagram" style="color: hsl(0, 0%, 90%);">Instagram</a></li>
+                <li><a href="aa" id="botãoMenu" target="_blank" >Sobre</a></li>
+                <li><a href="asa" id="botãoMenu" target="_blank" >Contato</a></li>
+                <li><a href="https://www.facebook.com/amapatas/?locale=pt_BR" id="botãoMenu" target="_blank" title="Facebook">Facebook</a></li>
+                <li><a href="https://www.instagram.com/amapatas/" id="botãoMenu" target="_blank" title="Instagram" >Instagram</a></li>
                 <li><a href="adocao.html" id="botãoAdoção" target="_blank" title="Adote">Quero adotar</a></li>
             </ul>
         </nav>
         </header>
 
-        <br>
+        
 
         <main>
 
@@ -52,35 +53,41 @@
 
                     <!--Imagens dos slides-->
                     <div class="slide first">
-                        <img src="src/assets/imagens/pastor_alemão.png" alt="Foto de um pastor alemão">
+                        <img src="src/assets/imagens/cao_feliz1280x960.png" alt="Foto de um pastor alemão">
+                        <span id="sliderTexto1">TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO</span>
                     </div>
                     <div class="slide">
-                        <img src="src/assets/imagens/gato.png" alt="Foto de um gato">
+                        <img src="src/assets/imagens/gato_carinho.png" alt="Foto de um gato">
+                        <span id="sliderTexto2">TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO</span>
                     </div>
                     <div class="slide">
-                        <img src="src/assets/imagens/cachorro_esquisito.jpg" alt="Foto de um cachorro esquisito">
+                        <img src="src/assets/imagens/cao_e_gato.png" alt="Foto de um cachorro e um gato">
+                        <span id="sliderTexto3">TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO</span>
                     </div>
                     <div class="slide">
-                        <img src="src/assets/imagens/gato2.jpg" alt="Foto de um gato perto da câmera">
+                        <img src="src/assets/imagens/cao_na_cama1280x960.png" alt="Foto de um cão na cama">
+                        <span id="sliderTexto4">TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO TESTANDO</span>
+                        
                     </div>
                     <!--Fim das imagens dos slides-->
 
                     <!--Navegação automática-->
-                    <div class="navigation-auto">
+                    <div class="navigation-auto navegacao">
                         <div class="auto-btn1"></div>
                         <div class="auto-btn2"></div>
                         <div class="auto-btn3"></div>
                         <div class="auto-btn4"></div>
                     </div>
+                    <div class="navegacao-manual navegacao">
+                        <label for="radio1" class="botao-manual"></label>
+                        <label for="radio2" class="botao-manual"></label>
+                        <label for="radio3" class="botao-manual"></label>
+                        <label for="radio4" class="botao-manual"></label>
+                    </div>
                 </div>
-                <div class="navegacao-manual">
-                    <label for="radio1" class="botao-manual"></label>
-                    <label for="radio2" class="botao-manual"></label>
-                    <label for="radio3" class="botao-manual"></label>
-                    <label for="radio4" class="botao-manual"></label>
-                </div>
+                
             </div>
-            <div class="explicandoAdocao">
+            <section class="explicandoAdocao">
 
                 <div class="tituloPrincipal">
                     <img id="pata1" src="src/assets/imagens/pata.png">
@@ -121,49 +128,76 @@
                     </div>
                     
                     <div class="curiosidades">
-                        <div class="tituloCuriosidades"><h2>Adote ou apadrinhe!</h2></div>
-                        <div class="textoCuriosidades"><p>Os bixinhos podem ser adotados ou apadrinhados até que se tenha uma decisão!</p></div>
+                        <div class="tituloCuriosidades"><h2>Apadrinhe!</h2></div>
+                        <div class="textoCuriosidades">
+                            <p>Caso não possa adotar mas ama os bixinhos, 
+                            ou simplesmente quer ajudar. Com o apadrinhamento, 
+                            você colabora com as despesas de um amiguinho 
+                            (Ração, remédios, veterinário...), podendo visitá-lo 
+                            e receber fotos e notícias dele sempre que quiser!</p></div>
                     </div>
-
                 </div>
-            </div>
-
-            <br>
+            </section>
+            
             <div class="card-area">
-                <div class="card-group">
-                    <div class="big-card card">
-        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                </div>
+                <a href="adocao.html" target="_blank" alt="Área adoção" title="Área adoção">
                 <div class="texto-cartas">
-                    <h1>Veja seu futuro amigo!</h1>
+                    <img src="./src/assets/imagens/dogIcon.png" >
+                    <h1>VEJA SEU FUTURO AMIGO AQUI!</h1>
+                    <img src="./src/assets/imagens/catIcon.png" >
+                </div>
+
+                <div class="card-group">
+                    
+                    <div class="little-card card">
+        
+                    </div>
+                    <div class="big-card card">
+        
+                    </div>
+                    <div class="little-card card">
+                        
+                    </div>
+                    <div class="big-card card">
+                        
+                    </div>
+                    <div class="little-card card">
+                        
+                    </div>
+                    <div class="big-card card">
+                        
+                    </div>
+                    <div class="little-card card">
+                        
+                    </div>
+                    <div class="big-card card">
+                    
+                    </div>
+                    <div class="emojis">
+                        <ul>
+                            <li>😻</li>
+                            <li>🐶</li>
+                            <li>🐕</li>
+                            <li>🐈</li>
+                            <li>❤️</li>
+                            <li>🥰</li>
+                            <li>😼</li>
+                            <li>🦴</li>
+                            <li>🧶</li>
+                            <li>🐾</li>
+                        </ul>
+                    </div>                    
+                </div>
+                </a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_content">
+                <div id="footer_contacts">
+                    
                 </div>
             </div>
-            
-            
-        </main>
-
+        </footer>
         
 
         
