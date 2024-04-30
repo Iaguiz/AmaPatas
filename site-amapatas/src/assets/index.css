@@ -1,3 +1,16 @@
+
+:root{
+	--color-neutral-0: hsl(0, 49%, 87%);
+	--color-neutral-1: hsl(0, 0%, 100%);
+}
+
+/*Modificações de todo o site*/
+*{
+    margin: 0px;
+    padding: 0px;
+	letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 html{
 	height: 2500px;
 }
@@ -12,21 +25,21 @@ main{
 	z-index: 0;
 	background-color: hsla(0, 0%, 100%, 0.664);
 }
-/*Iago ->  Modificações de todo o site*/
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+
+/*Retira a decoração de link (O sublinhado embaixo)*/
+a{
+    text-decoration: none;
 }
+
 
 /*INICIO DO HEADER*/
 
-/*Iago -> Estrutura inteira do cabeçalho*/
+/*Estrutura inteira do cabeçalho*/
 .header{
 	position: sticky;
 	top: 0px;
 	z-index: 10;
-    background: hsl(0, 49%, 87%);
+    background: var(--color-neutral-0);
     box-shadow: 0px 3px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -36,29 +49,29 @@ main{
 	
 }
 
-/*Iago -> Modificações da lista que está em <nav>*/
+/*Modificações da lista que está em <nav>*/
 .menu{
     display: flex;
 	list-style: none;
 }
 
-/*Iago -> Modifica os itens da lista que está em <nav>*/
+/*Modifica os itens da lista que está em <nav>*/
 .menu li{
     font-size: 1.2rem;
     margin-left: 10px;
 }
 
-/*Iago -> Muda todos os botões com id="botãoMenu"*/
+/*Muda todos os botões com id="botãoMenu"*/
 .menu li #botãoMenu{
     display: block;
     padding: 10px;
     background: hsl(2, 63%, 66%);
     border-bottom: 5px solid hsl(2, 63%, 33%);
     border-radius: 10px;
-	color: hsl(0, 0%, 90%);
+	color: var(--color-neutral-1);
 }
 
-/*Iago -> Muda o botão com id="botãoAdoção"*/
+/*Muda o botão com id="botãoAdoção"*/
 .menu li #botãoAdoção{
     display: block;
     padding: 10px;
@@ -71,10 +84,7 @@ main{
 
 	
 
-/*Iago -> Retira a decoração de link (O sublinhado embaixo)*/
-a{
-    text-decoration: none;
-}
+
 /*FINAL DO HEADER*/
 
 /*INICIO DO SLIDER*/
@@ -119,22 +129,22 @@ a{
 	
 }
 .slide #sliderTexto1{
-	color: rgb(0, 129, 204);
+	color: hsl(202, 100%, 40%);
 	top: -190%;
 	left: 2%;
 }
 .slide #sliderTexto2{
-	color: rgb(251, 251, 249);
+	color: var(--color-neutral-1);
 	top: -235%;
 	left: 40%;
 }
 .slide #sliderTexto3{
-	color: rgb(130, 37, 173);
+	color: hsl(281, 65%, 41%);
 	top: -235%;
 	left: 40%;
 }
 .slide #sliderTexto4{
-	color: rgb(211, 168, 76);
+	color: hsl(41, 61%, 56%);
 	top: -235%;
 	left: 40%;
 }
@@ -147,7 +157,7 @@ a{
 }
 
 .botao-manual{
-	border: 3px solid rgb(0, 0, 0);
+	border: 3px solid hsl(0, 0%, 0%);
 	padding: 5px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -176,7 +186,7 @@ a{
 	
 }
 .navigation-auto div{
-	border: 3px solid rgb(0, 0, 0);
+	border: 3px solid hsl(0, 0%, 0%);
 	padding: 5px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -193,17 +203,17 @@ a{
 	margin-right: 40px;
 }
 #radio1:checked ~ .navigation-auto .auto-btn1{
-	background-color: rgb(0, 0, 0);
+	background-color: hsl(0, 0%, 0%);
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-	background-color: rgb(0, 0, 0);
+	background-color: hsl(0, 0%, 0%);
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-	background-color: rgb(0, 0, 0);
+	background-color: hsl(0, 0%, 0%);
 	
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-	background-color: rgb(0, 0, 0);
+	background-color: hsl(0, 0%, 0%);
 }
 
 /*FIM DO SLIDER*/
@@ -292,7 +302,7 @@ a{
 }
 
 .card-area a{
-	color: black;
+	color: hsl(0, 0%, 0%);
 	width: 300px;
 	
 }
@@ -407,7 +417,7 @@ a{
 /*POSIÇÃO INICIAL DAS CARTAS*/
 /*POSIÇÃO FINAL DAS CARTAS*/
 .card-area:hover >a> .card-group > .card {  
-	box-shadow: -2vmin 2vmin 3vmin rgba(0, 0, 0, 0.4);
+	box-shadow: -2vmin 2vmin 3vmin hsla(0, 0%, 0%, 0.4);
 }
 .card-area:hover >a> .card-group > .big-card:nth-child(2) {
 	transform: translate(-75%, 16%) rotate(-24deg);
@@ -488,7 +498,35 @@ a{
 /* FINAL DAS CARTAS */
 
 /*INICIO DO FOOTER*/
-.fundoFooter{
-	background-color: hsl(0, 49%, 87%);
+footer{
+	width: 100%;
+	background-color: var(--color-neutral-0);
+	box-sizing: border-box;
 	
+}
+
+#footer_content{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+	margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+	display: flex;
+	gap: 2rem;
+	margin-top: 1.5rem;
+}
+
+#footer_social_media{
+	height: 2.5rem;
+	width: 2.5rem;
+	color: var(--color-neutral-1);
+}
+
+#footer_copyright{
+	background-color: hsl(350, 100%, 68%);
 }
