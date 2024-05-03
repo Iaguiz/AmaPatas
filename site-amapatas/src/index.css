@@ -15,7 +15,7 @@ html{
 	height: 2500px;
 }
 body{
-	background-image: url(./imagens/imagem_de_fundo.jpg);
+	background-image: url(./assets/imagens/imagem_de_fundo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -358,28 +358,28 @@ a{
 /*POSIÇÃO INICIAL DAS CARTAS*/
 
 .big-card:nth-child(2) {
-	background-image: url(./imagens/cao_marley.png);
+	background-image: url(./assets/imagens/cao_marley.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	transform: translate(0%) rotate(-10deg);
 }
 .big-card:nth-child(4) {
-	background-image: url(./imagens/cao_coragem.png);
+	background-image: url(./assets/imagens/cao_coragem.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	transform: translate(0%, 5%) rotate(6deg);
 }
 .big-card:nth-child(6) {
-	background-image: url(./imagens/gato_torto.png);
+	background-image: url(./assets/imagens/gato_torto.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	transform: translate(0%, 10%) rotate(-3deg);
 }
 .big-card:nth-child(8) {
-	background-image: url(./imagens/cao_decorado.png); 
+	background-image: url(./assets/imagens/cao_decorado.png); 
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -387,28 +387,28 @@ a{
 }
 
 .little-card:nth-child(1){
-	background-image: url(./imagens/cao_caraPintada.png);
+	background-image: url(./assets/imagens/cao_caraPintada.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	transform: translate(60%, -10%) rotate(3deg);
 }
 .little-card:nth-child(3){
-	background-image: url(./imagens/cao_boris.png);
+	background-image: url(./assets/imagens/cao_boris.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	transform: translate(120%, 75%) rotate(15deg);
 }
 .little-card:nth-child(5){
-	background-image: url(./imagens/gato_gordinho.jpg);
+	background-image: url(./assets/imagens/gato_gordinho.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	transform: translate(35%, 140%) rotate(0deg);
 }
 .little-card:nth-child(7){
-	background-image: url(./imagens/gato_distraido.png);
+	background-image: url(./assets/imagens/gato_distraido.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
