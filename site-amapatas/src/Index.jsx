@@ -169,11 +169,11 @@ function App() {
 
                         <div id="footer_social_media">
 
-                            <a href="#" class="footer-link" id="instagram">
+                            <a href="https://www.instagram.com/amapatas/" class="footer-link" id="instagram">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                             
-                            <a href="#" class="footer-link" id="facebook">
+                            <a href="https://www.facebook.com/amapatas/?locale=pt_BR" class="footer-link" id="facebook">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
                             
