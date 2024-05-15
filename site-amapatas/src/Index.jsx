@@ -1,7 +1,4 @@
-import { useState } from 'react'
 import './Index.css'
-
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 function App() {
@@ -15,21 +12,52 @@ function App() {
 
   return( 
     <>
-      <header class="header">
-            
-        <a href="index.html">
-            <img src="src/assets/imagens/logo.png" width="100px"></img>
-        </a> 
-        <nav class="navbar"> 
-            <ul class="menu">
-                <li><a href="aa" id="botãoMenu" target="_blank" >Sobre</a></li>
-                <li><a href="asa" id="botãoMenu" target="_blank" >Contato</a></li>
-                <li><a href="https://www.facebook.com/amapatas/?locale=pt_BR" id="botãoMenu" target="_blank" title="Facebook">Facebook</a></li>
-                <li><a href="https://www.instagram.com/amapatas/" id="botãoMenu" target="_blank" title="Instagram" >Instagram</a></li>
-                <li><a href="adocao.html" id="botãoAdoção" target="_blank" title="Adote">Quero adotar</a></li>
-            </ul>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="src/assets/imagens/logo.png" width="100px"></img>
+                </a>
+            </div>
+            <div class="nav-list">
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="botõesHeader" id="botãoMenu" target="_blank">
+                            <p class="inter-font">Sobre</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="botõesHeader" id="botãoMenu" target="_blank">
+                            <p class="inter-font">Contato</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/amapatas/?locale=pt_BR" class="botõesHeader" id="botãoMenu" target="_blank" title="Facebook">
+                            <p class="inter-font">Facebook</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/amapatas/" class="botõesHeader" id="botãoMenu" target="_blank" title="Instagram">
+                            <p class="inter-font">Instagram</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="adocao.html" class="botõesHeader" id="botãoAdoção" target="_blank" title="Adote">
+                            <p class="inter-font">Quero adotar</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button class="botõesHeader" id="botãoEntrar">
+                    <a href="#" target="_blank" title="Adote">
+                        <p class="inter-font">Entrar</p>
+                    </a>
+                </button>
+            </div>
         </nav>
-        </header>
+    </header>
+
         <main>
             <section class="slider">
                 <div class="slides">
@@ -62,7 +90,7 @@ function App() {
                     <img id="pata2" src="src/assets/imagens/pata.png"></img>
                 </div>
 
-                <div class="textoExplicativo">
+                <div class="textoExplicativo inter-font">
 
                     <div class="curiosidades">
                         <div class="tituloCuriosidades"><h2>Sobre nosso grupo</h2></div>
@@ -161,7 +189,7 @@ function App() {
         
             
         </main>
-        <footer class="footer">
+        <footer class="footer inter-font">
                 <div id="footer_content">
                     <div id="footer_contacts">
                         <h1>Logo</h1>
