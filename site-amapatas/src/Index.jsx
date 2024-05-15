@@ -1,5 +1,6 @@
 import './Index.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import menuShow from './nav-bar-mobile'
 
 function App() {
 
@@ -13,49 +14,42 @@ function App() {
   return( 
     <>
     <header class="header">
-        <nav class="navbar">
+        <nav class="nav-bar">
             <div class="logo">
-                <a href="index.html">
-                    <img src="src/assets/imagens/logo.png" width="100px"></img>
-                </a>
+                <a href="#"><img src="src\assets\imagens\logo.png" alt="Logo" class="logo-imagem"/></a>
             </div>
+
             <div class="nav-list">
-                <ul class="menu">
-                    <li>
-                        <a href="#" class="botõesHeader" id="botãoMenu" target="_blank">
-                            <p class="inter-font">Sobre</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="botõesHeader" id="botãoMenu" target="_blank">
-                            <p class="inter-font">Contato</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/amapatas/?locale=pt_BR" class="botõesHeader" id="botãoMenu" target="_blank" title="Facebook">
-                            <p class="inter-font">Facebook</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/amapatas/" class="botõesHeader" id="botãoMenu" target="_blank" title="Instagram">
-                            <p class="inter-font">Instagram</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="adocao.html" class="botõesHeader" id="botãoAdoção" target="_blank" title="Adote">
-                            <p class="inter-font">Quero adotar</p>
-                        </a>
-                    </li>
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link inter-font">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link inter-font">Instagram</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link inter-font">Facebook</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link inter-font">Adotar</a></li>
                 </ul>
             </div>
+
             <div class="login-button">
-                <button class="botõesHeader" id="botãoEntrar">
-                    <a href="#" target="_blank" title="Adote">
-                        <p class="inter-font">Entrar</p>
-                    </a>
-                </button>
+                <button><a href="#" class="inter-font">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fa-solid fa-bars icon"></i></button>
             </div>
         </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link inter-font">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link inter-font">Instagram</a></li>
+                <li class="nav-item"><a href="#" class="nav-link inter-font">Facebook</a></li>
+                <li class="nav-item"><a href="#" class="nav-link inter-font">Adotar</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#" class="inter-font">Entrar</a></button>
+            </div>
+        </div>
+
     </header>
 
         <main>
