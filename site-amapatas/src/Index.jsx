@@ -29,11 +29,11 @@ function App() {
             </div>
 
             <div class="login-button">
-                <button><a href="#" class="inter-font">Entrar</a></button>
+                <a href="#" ><button class="inter-font">Entrar</button></a>
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><i class="fa-solid fa-bars icon"></i></button>
+                <button onClick={menuShow}><i class="fa-solid fa-bars icon"></i></button>
             </div>
         </nav>
 
@@ -46,7 +46,7 @@ function App() {
             </ul>
 
             <div class="login-button">
-                <button><a href="#" class="inter-font">Entrar</a></button>
+                <a href="#" class="inter-font"><button>Entrar</button></a>
             </div>
         </div>
 
