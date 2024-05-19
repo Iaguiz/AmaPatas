@@ -130,7 +130,7 @@ function App() {
             </section>
             
             <div class="card-area">
-                <a href="adocao.html" target="_blank" alt="Área adoção" title="Área adoção">
+                <a href="#" target="_blank" alt="Área adoção" title="Área adoção">
                 <div class="texto-cartas">
                     <img src="./src/assets/imagens/dogIcon.png" ></img>
                     <h1>VEJA SEU FUTURO AMIGO AQUI!</h1>
